@@ -1,0 +1,9 @@
+[submodule "Sources/bx"]
+	path = Sources/bx
+	url = https://github.com/Vit3V/bx
+[submodule "Sources/bimg"]
+	path = Sources/bimg
+	url = https://github.com/Vit3V/bimg
+[submodule "Sources/bgfx"]
+	path = Sources/bgfx
+	url = https://github.com/Vit3V/bgfx
