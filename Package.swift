@@ -256,12 +256,12 @@ let package = Package(
                 ),
             ]
         ),
-        .testTarget(
-            name: "bgfxTests",
-            dependencies: [
-                "bgfx",
-            ]
-        ),
+//        .testTarget(
+//            name: "bgfxTests",
+//            dependencies: [
+//                "bgfx",
+//            ]
+//        ),
     ],
     cxxLanguageStandard: .cxx17
 )
