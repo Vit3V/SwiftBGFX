@@ -13,15 +13,15 @@ let package = Package(
     products: [
         .library(
             name: "bgfx",
-            targets: ["bgfx"]
+            targets: [
+                "bgfx",
+            ]
         ),
         .library(
-            name: "bimg",
-            targets: ["bimg"]
-        ),
-        .library(
-            name: "bx",
-            targets: ["bx"]
+            name: "bgfx_defines",
+            targets: [
+                "bgfx_defines",
+            ]
         ),
     ],
     dependencies: [],
@@ -30,7 +30,7 @@ let package = Package(
             name: "bgfx",
             dependencies: [
                 "bx",
-                "bimg"
+                "bimg",
             ],
             sources: [
                 "src/amalgamated.mm",
@@ -55,6 +55,9 @@ let package = Package(
                 ),
                 .unsafeFlags(["-fno-objc-arc"]),
             ]
+        ),
+        .target(
+            name: "bgfx_defines"
         ),
         .target(
             name: "bx",
