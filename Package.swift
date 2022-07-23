@@ -6,10 +6,6 @@ import PackageDescription
 
 let package = Package(
     name: "bgfx",
-    platforms: [
-        .iOS(.v13),
-        .macCatalyst(.v13)
-    ],
     products: [
         .library(
             name: "bgfx",
@@ -48,7 +44,11 @@ let package = Package(
                     .when(
                         platforms: [
                             .iOS,
+                            .macOS,
                             .macCatalyst,
+                            .tvOS,
+                            .watchOS,
+                            .driverKit,
                         ],
                         configuration: nil
                     )
